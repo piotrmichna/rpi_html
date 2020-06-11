@@ -1,0 +1,8 @@
+*.txt
+phpmyadmin
+*.css~
+*.sh
+connect.php
+_index.php
+*.htm
+*.html
