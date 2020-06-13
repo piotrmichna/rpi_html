@@ -41,14 +41,19 @@
 
 					if(isset($_POST['delay_s'])){
 						if( is_numeric($_POST['delay_s']) ){
-							mysqli_query($con, 'UPDATE sens SET delay_s=' . $_POST['delay_s'] .' WHERE id=' . $_POST['id']);
+							mysqli_query($con, 'UPDATE item SET delay_s=' . $_POST['delay_s'] .' WHERE id=' . $_POST['id']);
+						}
+					}
+					if(isset($_POST['act'])){
+						if( is_numeric($_POST['act']) ){
+							mysqli_query($con, 'UPDATE item SET stan_act=' . $_POST['act'] .' WHERE id=' . $_POST['id']);
 						}
 					}
 					if(isset($_POST['enf'])){
 						if( isset($_POST['en']) ){
-							mysqli_query($con, 'UPDATE sens SET en=1 WHERE id=' . $_POST['enf']);
+							mysqli_query($con, 'UPDATE item SET en=1 WHERE id=' . $_POST['enf']);
 						}else{
-							mysqli_query($con, 'UPDATE sens SET en=0 WHERE id=' . $_POST['enf']);
+							mysqli_query($con, 'UPDATE item SET en=0 WHERE id=' . $_POST['enf']);
 						}
 					}
 					$wym=mysqli_query($con, 'SELECT * FROM item WHERE dir=0 ORDER BY nazwa;');			
@@ -57,7 +62,7 @@
 						echo '<h2>Lista czujnikow</h2>';	
 						echo '	<table id="tabList">';
 						echo '		<tr>';
-						echo '			<td class="tdNg">ID</td><td class="tdNg">Nazwa</td><td class="tdNg">Opis</td><td class="tdNg">Stan</td><td class="tdNg">Test[s]</td><td class="tdNg">EN</td>';
+						echo '			<td class="tdNg">ID</td><td class="tdNg">Nazwa</td><td class="tdNg">Stan</td><td class="tdNg">Stan ACT</td><td class="tdNg">Test[s]</td><td class="tdNg">EN</td>';
 						echo '		</tr>';
 						$i=0;
 						while ( $wym_row=mysqli_fetch_assoc($wym) ){
@@ -69,13 +74,21 @@
 							$styl="tdLib";
 							echo '			<td class="' . $styl . '">'. $wym_row['id']. '</td>';
 							echo '			<td class="' . $styl . '">'. $wym_row['nazwa']. '</td>';
-							echo '			<td class="' . $styl . '">'. $wym_row['opis']. '</td>';							
 		
 							if($wym_row['stan']==$wym_row['stan_act']) {
 								echo '			<td class="' . $styl . '">Aktywny</td>';
 							}else{
 								echo '			<td class="' . $styl . '">-</td>';
 							}
+							
+							echo '			<td class="' . $styl . '">';							
+							echo '				<form action="?ed=0" method="POST">';
+							echo '					<input type="hidden" name="id" value="' . $wym_row['id'] , '">';
+								
+							echo '					<input type="text" name="act" value="' . $wym_row['stan_act'] , '">---->';
+							echo '					<input type="submit" value="Ustaw">';
+							echo '				</form>';					
+							echo '			</td>';
 							
 							echo '			<td class="' . $styl . '">';							
 							echo '				<form action="?ed=0" method="POST">';
