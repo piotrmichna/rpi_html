@@ -30,7 +30,7 @@ body{
 	padding: 0px;
 	margin: 0px;
 	width: 1000px;
-	height: 62px;
+	height: 92px;
 	text-align: left;
 	background-color: #ee5e32;
 	
@@ -38,28 +38,61 @@ body{
 .tyt
 {
 	float: left;
-	background-color: #ee5e32;
-	width: 150px;
+	background-color: #aaaaaa;
+	width: 165px;
 	margin: 0px;
-	padding: 0px 10px 0px 0px;
-	height: 62px;
-	font-size: 48px;
+	padding: 10px 20px 0px 0px;
+	height: 82px;
+	font-size: 52px;
 	color: #000000;
-	text-align:center !important;
+	text-align: center !important;
 }
 .tyt:hover
 {
-	background-color: #3095d3;
+	background-color: #3b3a30;
 	color: #ffffff;
+}
+.mCol
+{
+	float: left;
+	width: 360px;
+	padding: 5px;
+	font-size: 62px;
+	color: #ffffff;
+}
+.cafelT
+{
+	margin: 10px;
+	padding: 15px;
+	font-size: 50px;
+	text-align:center !important;
+	background-color: #ee5e32;
+}
+
+.cafelH
+{
+	margin: 10px;
+	padding: 15px;
+	font-size: 50px;
+	text-align:center !important;
+	background-color: #3095d3;
+}
+.cafelP
+{
+	margin: 10px;
+	padding: 15px;
+	font-size: 50px;
+	text-align:center !important;
+	background-color: #725b6e;
 }
 .nav
 {
 	float: left;
-	background-color: #405d27;
-	width: 840px;
-	height: 62px;
-	margin: 0;
-	padding: 0;
+	background-color: #555555;
+	width: 815px;
+	height: 92px;
+	margin: 0px;
+	padding: 0px;
 }
 .dpList
 {
@@ -84,7 +117,7 @@ body{
 	font-size: 26px;
 	color: #000000;
 	text-align: right;
-	background-color: #405d27;
+	background-color: #aaaaaa;
 }
 .footer a{	
 	text-decoration: none;
@@ -99,8 +132,8 @@ body{
 	width: 499px;
 	height: 52px;
 	text-align: center;
-	color: #ffffff;
-	background-color: red;
+	color: #333333;
+	background-color: #555555;
 }
 
 .stStop
@@ -109,7 +142,8 @@ body{
 	width: 499px;
 	height: 52px;
 	text-align: center;	
-	background-color: #93c748;
+	color: #333333;
+	background-color: #555555;
 }
 .tabList
 {
@@ -209,50 +243,51 @@ ol
 ol a{
 	
 	text-decoration: none;
-	height: 62px;
+	height: 92px;
 	display: block;
 	padding-left: 4px;
 }
 ol > li
 {
 	float: left;
-	width: 417px;
-	height: 62px;
+	width: 395px;
+	height: 92px;
 	
-	border-right: 2px dashed #3e4444;
+	border-right: 2px dashed #555555;
 	display: inline-block;
 }
 ol > li:first-child
 {
-	border-left: 2px dashed #3e4444;
+	border-left: 4px dashed #3e4444;
 }
 ol > li:hover > a
 {
-	background-color: #3095d3;
-	color: #ffffff,
+	background-color: #3b3a30;
+	color: #ffffff;
 }
 
 ol > li > ul
 {
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
-
-	height: 36px;
+	padding: 0px;
+	margin: 0px;	
+	height: 62px;
 	font-size: 36px;
 	text-align: left;
 	display: none;
 }
 
 ol > li > ul > li {
-	background-color: #3095d3;
+	background-color: #3b3a30;
+	padding-top: 5px;
 	position: relative;
+	height: 62px;
 	z-index: 100;
-	border-top: 1px dashed #3e4444;
+	border-top: 1px dashed #aaaaaa;
 }
 ol > li > ul > li:hover
 {
-	background-color: #93c748;
+	background-color: #73c748;
 }
 
 ol > li:hover > ul
