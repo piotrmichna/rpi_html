@@ -1,25 +1,28 @@
+form{
+    padding: 15px 40px 15px 30px;
 
+}
 input[type=text],
 input[type=number],
 input[type=text],
 input[type=radio],
 input[type=password]{
 	box-sizing: border-box;
-	width: 120px;
-	font-size: 32px;
+	width: 220px;
+	font-size: 42px;
 	padding: 5px;
-	border: 2px solid #6e6d63;
-	color:#93c748;	
-	background-color: #1c2222;	
+	border: 2px solid #666666;
+	color:#000000;
+	background-color: #ffffff;
 }
 
 input[type=submit]{
 	box-sizing: border-box;
-	font-size: 32px;
+	font-size: 42px;
 	padding: 5px;
-	border: 2px solid #6e6d63;
-	color:#93c748;	
-	background-color: #1c2222;
+	border: 2px solid #666666;
+	color:#333333;
+	background-color: #dddddd;
 }
 select{
 	box-sizing: border-box;
@@ -27,7 +30,7 @@ select{
 	font-size: 32px;
 	padding: 5px;
 	border: 2px solid #6e6d63;
-	color:#93c748;	
+	color:#93c748;
 	background-color: #1c2222;
 }
 

@@ -33,7 +33,7 @@ body{
 	height: 92px;
 	text-align: left;
 	background-color: #ee5e32;
-	
+
 }
 .tyt
 {
@@ -60,6 +60,14 @@ body{
 	font-size: 62px;
 	color: #ffffff;
 }
+.mCor
+{
+	float: left;
+	width: 580px;
+	padding: 5px;
+	font-size: 62px;
+	color: #ffffff;
+}
 .cafelT
 {
 	margin: 10px;
@@ -68,7 +76,6 @@ body{
 	text-align:center !important;
 	background-color: #ee5e32;
 }
-
 .cafelH
 {
 	margin: 10px;
@@ -84,6 +91,58 @@ body{
 	font-size: 50px;
 	text-align:center !important;
 	background-color: #725b6e;
+}
+.cafelX
+{
+	margin: 10px;
+	padding: 15px;
+	font-size: 50px;
+	text-align:center !important;
+	background-color: #222222;
+}
+.cafel
+{
+    float: left;
+	margin: 15px;
+	padding: 0px;
+	font-size: 50px;
+	text-align:center !important;
+    background-color: #1074a1;
+}
+.cafer
+{
+    float: left;
+	margin: 15px;
+	padding: 0px;
+	font-size: 50px;
+	text-align:center !important;
+    background-color: #50394c;
+}
+.cafex
+{
+    float: left;
+	margin: 15px;
+	padding: 0px;
+	font-size: 50px;
+	text-align:center !important;
+    background-color: #222222;
+}
+.cafel a:hover, .cafer a:hover, .cafex a:hover
+{
+    background-color: #93c748;
+}
+.cafel a, .cafer a, .cafex a{
+    text-decoration: none;
+	font-size: 42px;
+    padding: 45px 35px 45px 35px;
+	display: block;
+	z-index: 98;
+	color: #ffffff;
+}
+.cafForm{
+    clear: both;
+    padding: 15px 35px 15px 35px;
+	color: #ffffff;
 }
 .nav
 {
@@ -103,7 +162,7 @@ body{
 	font-size: 18px;
 	background-color: #333333;
 	padding-bottom: 1px;
-	
+
 }
 .footer
 {
@@ -119,7 +178,7 @@ body{
 	text-align: right;
 	background-color: #aaaaaa;
 }
-.footer a{	
+.footer a{
 	text-decoration: none;
 	font-size: 42px;
 	display: block;
@@ -127,7 +186,7 @@ body{
 	color: #ffffff;
 }
 .stPlay
-{	
+{
 	float: left;
 	width: 499px;
 	height: 52px;
@@ -141,7 +200,7 @@ body{
 	float: left;
 	width: 499px;
 	height: 52px;
-	text-align: center;	
+	text-align: center;
 	color: #333333;
 	background-color: #555555;
 }
@@ -155,27 +214,27 @@ body{
 {
 	background-color: #121212;
 	text-align: center;
-	font-size: 28px;	
+	font-size: 28px;
 	padding-top: 4px;
 }
 .tdLib
 {
 	background-color: #222222;
 	text-align: center;
-	font-size: 28px;	
+	font-size: 28px;
 	padding-top: 4px;
 }
 .tdLisa
 {
 	background-color: #121212;
-	font-size: 28px;	
+	font-size: 28px;
 	text-align: left;
 	padding-top: 4px;
 }
 .tdLisb
 {
 	background-color: #222222;
-	font-size: 28px;	
+	font-size: 28px;
 	text-align: left;
 	padding-top: 4px;
 }
@@ -218,7 +277,7 @@ td  a:visited
 {
 	width: 1000px;
 	bottom: 42px;
-	
+
 }
 td{
 	margin: 4px;
@@ -238,10 +297,10 @@ ol
 	list-style-type: none;
 	font-size: 48px;
 	text-align: left;
-	
+
 }
 ol a{
-	
+
 	text-decoration: none;
 	height: 92px;
 	display: block;
@@ -252,7 +311,7 @@ ol > li
 	float: left;
 	width: 395px;
 	height: 92px;
-	
+
 	border-right: 2px dashed #555555;
 	display: inline-block;
 }
@@ -270,7 +329,7 @@ ol > li > ul
 {
 	list-style-type: none;
 	padding: 0px;
-	margin: 0px;	
+	margin: 0px;
 	height: 62px;
 	font-size: 36px;
 	text-align: left;
@@ -300,7 +359,7 @@ p{
 	color: #93c748;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	
+
 }
 
 a:link{
