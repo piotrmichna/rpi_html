@@ -98,16 +98,18 @@
                     $et="Max:". "\n";
                     $styl="cafer". "\n";
                     $nam="tmax";
+                    $val=$temp_max;
                 }else{
                     $nam="tmin";
                     $et="Min:". "\n";
                     $styl="cafel". "\n";
+                    $val=$temp_min;
                 }
             #formularz
                 echo '		<div class="' . $styl .'">'. "\n";
                 echo '      <form action="us_param.php" method="POST">' . "\n";
                 echo            $et . "\n";
-                echo '          <input type="number" name="' . $nam .'">' . "\n";
+                echo '          <input type="number" name="' . $nam .'" value="' . $val . '">' . "\n";
                 echo '          <input type="submit" value="Zmień">' . "\n";
                 echo "      </form>\n";
                 echo '     </div>'. "\n";
@@ -131,16 +133,18 @@
                     $et="Max:". "\n";
                     $styl="cafer". "\n";
                     $nam="hmax";
+                    $val=$humi_max;
                 }else{
                     $nam="hmin";
                     $et="Min:". "\n";
                     $styl="cafel". "\n";
+                    $val=$humi_min;
                 }
             #formularz
                 echo '		<div class="' . $styl .'">'. "\n";
                 echo '      <form action="us_param.php" method="POST">' . "\n";
                 echo            $et . "\n";
-                echo '          <input type="number" name="' . $nam .'">' . "\n";
+                echo '          <input type="number" name="' . $nam .'" value="' . $val . '">' . "\n";
                 echo '          <input type="submit" value="Zmień">' . "\n";
                 echo "      </form>\n";
                 echo '     </div>'. "\n";
@@ -163,7 +167,8 @@
                 echo '		<div class="cafex">'. "\n";
                 echo '      <form action="us_param.php" method="POST">' . "\n";
                 echo           "Sekund:\n";
-                echo '          <input type="number" name="min_delay">' . "\n";
+                echo '          <input type="number" name="min_delay" value="' . $min_delay . '">' . "\n";
+
                 echo '          <input type="submit" value="Zmień">' . "\n";
                 echo "      </form>\n";
                 echo '     </div>'. "\n";
