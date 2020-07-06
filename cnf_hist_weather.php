@@ -106,7 +106,7 @@ var chartT = new CanvasJS.Chart("chartContainerT", {
 	data: [{
         title: "dateTime",
         lineColor: "#ee5e32",
-        markerColor: "red",
+        markerColor: "#ee5e32",
 		type: "spline",
 		markerSize: 5,
 		yValueFormatString: "0.0#°C",
@@ -147,7 +147,7 @@ var chartP = new CanvasJS.Chart("chartContainerP", {
 	data: [{
         title: "dateTime",
         lineColor: "#50394c",
-        markerColor: "red",
+        markerColor: "#50394c",
 		type: "spline",
 		markerSize: 5,
 		yValueFormatString: "0.0# hPa",
@@ -187,7 +187,7 @@ var chartH = new CanvasJS.Chart("chartContainerH", {
         title: "dateTime",
 		type: "spline",
 		lineColor: "#3095d3",
-		markerColor: "red",
+		markerColor: "#3095d3",
 		markerSize: 5,
 		yValueFormatString: "0.0",
 		xValueFormatString:"DD-MM-YY HH:mm",
@@ -225,8 +225,8 @@ var chartL = new CanvasJS.Chart("chartContainerL", {
 	data: [{
         title: "dateTime",
 		type: "spline",
-		markerColor: "red",
-		lineColor: "#3095d3",
+		markerColor: "#FFFF00",
+		lineColor: "#FFFF00",
 		markerSize: 5,
 		yValueFormatString: "0.0 lux",
 		xValueFormatString:"DD-MM-YY HH:mm",
