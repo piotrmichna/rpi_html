@@ -81,15 +81,20 @@ var chartT = new CanvasJS.Chart("chartContainerT", {
     backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
+        fontColor: "#aaaaaa",
 		text: "Temperaturay"
 	},
 	axisX: {
         valueType: "dateTime",
+        titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
         valueFormatString:"DD-MM-YY HH:mm",
         labelAngle: -30
 	},
 	axisY: {
 		title: "Temperatura",
+		titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
 		valueFormatString: "00.0#",
 		suffix: "°C",
 		interval: 5,
@@ -100,6 +105,7 @@ var chartT = new CanvasJS.Chart("chartContainerT", {
 	},
 	data: [{
         title: "dateTime",
+        lineColor: "#3095d3",
 		type: "spline",
 		markerSize: 5,
 		yValueFormatString: "0.0#°C",
@@ -115,15 +121,20 @@ var chartP = new CanvasJS.Chart("chartContainerP", {
     backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
+        fontColor: "#aaaaaa",
 		text: "Ciśnienie atmosferyczne"
 	},
 	axisX: {
         valueType: "dateTime",
+        titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
         valueFormatString:"DD-MM-YY HH:mm",
         labelAngle: -30
 	},
 	axisY: {
 		title: "cisnienie",
+		titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
 		valueFormatString: "0.0#",
 		suffix: "hPa",
 		interval: 5,
@@ -134,6 +145,7 @@ var chartP = new CanvasJS.Chart("chartContainerP", {
 	},
 	data: [{
         title: "dateTime",
+        lineColor: "#3095d3",
 		type: "spline",
 		markerSize: 5,
 		yValueFormatString: "0.0# hPa",
@@ -147,15 +159,20 @@ var chartH = new CanvasJS.Chart("chartContainerH", {
     backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
+        fontColor: "#aaaaaa",
 		text: "Wilgotność powietrza"
 	},
 	axisX: {
         valueType: "dateTime",
+        titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
         valueFormatString:"DD-MM-YY HH:mm",
         labelAngle: -30
 	},
 	axisY: {
 		title: "Wilgotność",
+		titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
 		valueFormatString: "0.0#",
 		suffix: "%",
 		interval: 5,
@@ -167,6 +184,7 @@ var chartH = new CanvasJS.Chart("chartContainerH", {
 	data: [{
         title: "dateTime",
 		type: "spline",
+		lineColor: "#3095d3",
 		markerSize: 5,
 		yValueFormatString: "0.0",
 		xValueFormatString:"DD-MM-YY HH:mm",
@@ -179,14 +197,19 @@ var chartL = new CanvasJS.Chart("chartContainerL", {
     backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
+        fontColor: "#aaaaaa",
 		text: "Usłonecznienie "
 	},
 	axisX: {
+        titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
         valueType: "dateTime",
         valueFormatString:"DD-MM-YY HH:mm",
         labelAngle: -30
 	},
 	axisY: {
+        titleFontColor: "#aaaaaa",
+        labelFontColor: "#aaaaaa",
 		title: "Usłonecznienie",
 		valueFormatString: "0.0# lux",
 		suffix: "lux",
@@ -199,6 +222,7 @@ var chartL = new CanvasJS.Chart("chartContainerL", {
 	data: [{
         title: "dateTime",
 		type: "spline",
+		lineColor: "#3095d3",
 		markerSize: 5,
 		yValueFormatString: "0.0 lux",
 		xValueFormatString:"DD-MM-YY HH:mm",
