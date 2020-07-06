@@ -81,6 +81,8 @@
 					echo "przedział czasowy $dat_od do $dat_do</br>";
 					$unix_timestamp = strtotime("$dat_od");
 					echo "sekudy od $unix_timestamp";
+					$unix_timestamp = strtotime("$dat_od"." 23:59:59");
+					echo "sekudy od $unix_timestamp";
 					echo '</div>';
 
 					unset($wym);
