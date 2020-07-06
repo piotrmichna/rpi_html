@@ -251,17 +251,17 @@ chartL.render();
 					echo '	</table>';
 					echo '</form>';
 					echo '</div>';
+?>
 
+					<h2>Tempertatura</h2>
+					<div id="chartContainerT" style="height: 370px; width: 100%;"></div>
+					<h2>Tempertatura</h2>
+					<div id="chartContainerP" style="height: 370px; width: 100%;"></div>
+					<h2>Tempertatura</h2>
+					<div id="chartContainerH" style="height: 370px; width: 100%;"></div>
+					<h2>Tempertatura</h2>
+					<div id="chartContainerL" style="height: 370px; width: 100%;"></div>
 
-					echo '<h2>Tempertatura</h2>';
-					echo '<div id="chartContainerT" style="height: 370px; width: 100%;"></div>';
-					echo '<h2>Tempertatura</h2>';
-					echo '<div id="chartContainerP" style="height: 370px; width: 100%;"></div>';
-					echo '<h2>Tempertatura</h2>';
-					echo '<div id="chartContainerH" style="height: 370px; width: 100%;"></div>';
-					echo '<h2>Tempertatura</h2>';
-					echo '<div id="chartContainerL" style="height: 370px; width: 100%;"></div>';
-			?>
 		</div>
 		<div class="footer">
 			<?php
