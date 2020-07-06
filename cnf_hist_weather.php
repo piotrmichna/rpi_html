@@ -98,14 +98,14 @@ var chartT = new CanvasJS.Chart("chartContainerT", {
 		valueFormatString: "00.0#",
 		suffix: "°C",
 		interval: 5,
-		gridColor: "gray",
+		gridColor: "#888888",
 		gridDashType: "shortDot",
 		minimum: -30,
 		maximum: 50
 	},
 	data: [{
         title: "dateTime",
-        lineColor: "#3095d3",
+        lineColor: "#ee5e32",
 		type: "spline",
 		markerSize: 5,
 		yValueFormatString: "0.0#°C",
@@ -138,14 +138,14 @@ var chartP = new CanvasJS.Chart("chartContainerP", {
 		valueFormatString: "0.0#",
 		suffix: "hPa",
 		interval: 5,
-		gridColor: "gray",
+		gridColor: "#888888",
 		gridDashType: "shortDot",
 		minimum: 970,
 		maximum: 1025
 	},
 	data: [{
         title: "dateTime",
-        lineColor: "#3095d3",
+        lineColor: "#50394c",
 		type: "spline",
 		markerSize: 5,
 		yValueFormatString: "0.0# hPa",
@@ -176,7 +176,7 @@ var chartH = new CanvasJS.Chart("chartContainerH", {
 		valueFormatString: "0.0#",
 		suffix: "%",
 		interval: 5,
-		gridColor: "gray",
+		gridColor: "#888888",
 		gridDashType: "shortDot",
 		minimum: 5,
 		maximum: 100
@@ -214,10 +214,10 @@ var chartL = new CanvasJS.Chart("chartContainerL", {
 		valueFormatString: "0.0# lux",
 		suffix: "lux",
 		interval: 100,
-		gridColor: "gray",
+		gridColor: "#888888",
 		gridDashType: "shortDot",
 		minimum: 0,
-		maximum: 3000
+		maximum: 2200
 	},
 	data: [{
         title: "dateTime",
