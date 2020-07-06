@@ -146,8 +146,8 @@ var chartP = new CanvasJS.Chart("chartContainerP", {
 	},
 	data: [{
         title: "dateTime",
-        lineColor: "#50394c",
-        markerColor: "#50394c",
+        lineColor: "#FF00FF",
+        markerColor: "#FF00FF",
 		type: "spline",
 		markerSize: 5,
 		yValueFormatString: "0.0# hPa",
