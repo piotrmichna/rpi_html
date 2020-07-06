@@ -28,7 +28,7 @@
             array_push($dataPointsT, array("x" => $dtim, "y" => $wym_row['temp']));
             $i++;
         }
-        echo "t=$i"
+        echo "t=$i";
         $wym=mysqli_query($con, 'SELECT dattim, pres FROM bme_pres_ave WHERE dattim>='.$unix_sec_od.' AND dattim<='.$unix_sec_do.' ORDER BY dattim;');
         $i=0;
         $dataPointsP = array();
@@ -37,7 +37,7 @@
             array_push($dataPointsP, array("x" => $dtim, "y" => $wym_row['pres']));
             $i++;
         }
-        echo "p=$i"
+        echo "p=$i";
         $wym=mysqli_query($con, 'SELECT dattim, humi FROM bme_humi_ave WHERE dattim>='.$unix_sec_od.' AND dattim<='.$unix_sec_do.' ORDER BY dattim;');
         $i=0;
         $dataPointsH = array();
@@ -46,7 +46,7 @@
             array_push($dataPointsH, array("x" => $dtim, "y" => $wym_row['humi']));
             $i++;
         }
-
+        echo "h=$i";
 
         $wym=mysqli_query($con, 'SELECT dattim, ligh FROM bme_ligh_ave WHERE dattim>='.$unix_sec_od.' AND dattim<='.$unix_sec_do.' ORDER BY dattim;');
         $i=0;
@@ -56,6 +56,7 @@
             array_push($dataPointsL, array("x" => $dtim, "y" => $wym_row['ligh']));
             $i++;
         }
+        echo "l=$i";
         unset($wym);
         mysqli_close($con);
     }
