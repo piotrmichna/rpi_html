@@ -20,7 +20,7 @@
         echo "Error: ".mysqli_connect_errno();
     } else {
 
-        $wym=mysqli_query($con, "SELECT dattim, temp FROM bme_temp_ave WHERE dattim>=$unix_sec_od AND dattim<=$unix_sec_do ORDER BY dattim;");
+        $wym=mysqli_query($con, 'SELECT dattim, temp FROM bme_temp_ave WHERE dattim>='.$unix_sec_od.' AND dattim<='.$unix_sec_do.' ORDER BY dattim;');
         $i=0;
         $dataPointsT = array();
         while ( $wym_row=mysqli_fetch_assoc($wym) ){
@@ -28,8 +28,8 @@
             array_push($dataPointsT, array("x" => $dtim, "y" => $wym_row['temp']));
             $i++;
         }
-
-        $wym=mysqli_query($con, 'SELECT dattim, pres FROM bme_pres_ave WHERE dattim>=$unix_sec_od AND dattim<=$unix_sec_do ORDER BY dattim;');
+        echo "t=$i"
+        $wym=mysqli_query($con, 'SELECT dattim, pres FROM bme_pres_ave WHERE dattim>='.$unix_sec_od.' AND dattim<='.$unix_sec_do.' ORDER BY dattim;');
         $i=0;
         $dataPointsP = array();
         while ( $wym_row=mysqli_fetch_assoc($wym) ){
@@ -37,9 +37,8 @@
             array_push($dataPointsP, array("x" => $dtim, "y" => $wym_row['pres']));
             $i++;
         }
-
-
-        $wym=mysqli_query($con, 'SELECT dattim, humi FROM bme_humi_ave WHERE dattim>=$unix_sec_od AND dattim<=$unix_sec_do ORDER BY dattim;');
+        echo "p=$i"
+        $wym=mysqli_query($con, 'SELECT dattim, humi FROM bme_humi_ave WHERE dattim>='.$unix_sec_od.' AND dattim<='.$unix_sec_do.' ORDER BY dattim;');
         $i=0;
         $dataPointsH = array();
         while ( $wym_row=mysqli_fetch_assoc($wym) ){
@@ -49,7 +48,7 @@
         }
 
 
-        $wym=mysqli_query($con, 'SELECT dattim, ligh FROM bme_ligh_ave WHERE dattim>=$unix_sec_od AND dattim<=$unix_sec_do ORDER BY dattim;');
+        $wym=mysqli_query($con, 'SELECT dattim, ligh FROM bme_ligh_ave WHERE dattim>='.$unix_sec_od.' AND dattim<='.$unix_sec_do.' ORDER BY dattim;');
         $i=0;
         $dataPointsL= array();
         while ( $wym_row=mysqli_fetch_assoc($wym) ){
@@ -272,10 +271,7 @@ chartL.render();
 		</div>
 		<div class="footer">
 			<?php
-
 				echo '<div class="stPlay"><a href="idr_pomiar.php?rfs=0">STOP <i class="demo-icon icon-cancel"></i> </a> </div> <div class="stStop">Copyright Piotr Michna</div>';
-
-
 			?>
 			<div style="clear:both"></div>
 		</div>
