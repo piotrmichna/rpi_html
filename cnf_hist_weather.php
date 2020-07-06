@@ -4,7 +4,7 @@
     if ( isset($_POST['dat_od']) ) {
         $dat_od=$_POST['dat_od'];
     }else{
-        $dat_od= date("Y-m-d", strtotime( $doday ." -1 day"));
+        $dat_od= date("Y-m-d", strtotime( $doday ." -7 day"));
     }
     $unix_sec_od = strtotime("$dat_od"." 00:00:00");
 
