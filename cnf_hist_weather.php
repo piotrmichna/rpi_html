@@ -78,7 +78,7 @@
 window.onload = function () {
 
 var chartT = new CanvasJS.Chart("chartContainerT", {
-    backgroundColor: "#101010"
+    backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
 		text: "Temperaturay"
@@ -112,7 +112,7 @@ var chartT = new CanvasJS.Chart("chartContainerT", {
 
 
 var chartP = new CanvasJS.Chart("chartContainerP", {
-    backgroundColor: "#101010"
+    backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
 		text: "Ciśnienie atmosferyczne"
@@ -144,7 +144,7 @@ var chartP = new CanvasJS.Chart("chartContainerP", {
 });
 
 var chartH = new CanvasJS.Chart("chartContainerH", {
-    backgroundColor: "#101010"
+    backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
 		text: "Wilgotność powietrza"
@@ -176,7 +176,7 @@ var chartH = new CanvasJS.Chart("chartContainerH", {
 });
 
 var chartL = new CanvasJS.Chart("chartContainerL", {
-    backgroundColor: "#101010"
+    backgroundColor: "#101010",
 	animationEnabled: true,
 	title:{
 		text: "Usłonecznienie "
