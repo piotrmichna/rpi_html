@@ -252,15 +252,22 @@ chartL.render();
 					echo '</form>';
 					echo '</div>';
 ?>
-
+                <div class="dpList">
 					<h2>Tempertatura</h2>
 					<div id="chartContainerT" style="height: 370px; width: 100%;"></div>
+                </div>
+                <div class="dpList">
 					<h2>Tempertatura</h2>
 					<div id="chartContainerP" style="height: 370px; width: 100%;"></div>
+                </div>
+                <div class="dpList">
 					<h2>Tempertatura</h2>
 					<div id="chartContainerH" style="height: 370px; width: 100%;"></div>
+                </div>
+                <div class="dpList">
 					<h2>Tempertatura</h2>
 					<div id="chartContainerL" style="height: 370px; width: 100%;"></div>
+                </div>
 
 					<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 		</div>
