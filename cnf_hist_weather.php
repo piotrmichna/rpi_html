@@ -78,7 +78,9 @@
 
 					echo '<div class="dpList">';
 					echo '<h2>Tempertatura</h2>';
-					echo "przedział czasowy $dat_od do $dat_do";
+					echo "przedział czasowy $dat_od do $dat_do</br>";
+					$unix_timestamp = strtotime("$dat_od");
+					echo "sekudy od $unix_timestamp";
 					echo '</div>';
 
 					unset($wym);
