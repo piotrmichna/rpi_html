@@ -252,22 +252,15 @@ chartL.render();
 					echo '</form>';
 					echo '</div>';
 
-					echo '<div class="dpList">';
+
 					echo '<h2>Tempertatura</h2>';
 					echo '<div id="chartContainerT" style="height: 370px; width: 100%;"></div>';
-					echo '</div>';
-					echo '<div class="dpList">';
 					echo '<h2>Tempertatura</h2>';
 					echo '<div id="chartContainerP" style="height: 370px; width: 100%;"></div>';
-					echo '</div>';
-                    echo '<div class="dpList">';
 					echo '<h2>Tempertatura</h2>';
 					echo '<div id="chartContainerH" style="height: 370px; width: 100%;"></div>';
-					echo '</div>';
-					echo '<div class="dpList">';
 					echo '<h2>Tempertatura</h2>';
 					echo '<div id="chartContainerL" style="height: 370px; width: 100%;"></div>';
-					echo '</div>';
 			?>
 		</div>
 		<div class="footer">
