@@ -78,6 +78,7 @@
 
 					echo '<div class="dpList">';
 					echo '<h2>Tempertatura</h2>';
+					echo "przedział czasowy $dat_od do $dat_do"
 					echo '</div>';
 
 					unset($wym);
