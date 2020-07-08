@@ -29,11 +29,11 @@
     <?php
 
         //require_once "connect.php";
-        $con = mysqli_connect("localhost", "pituEl", "hi24biscus", "homster");
+        $con = mysqli_connect("localhost", "user", "password", "homster");
         if (mysqli_connect_errno()){
             echo "Error: ".mysqli_connect_errno();
         }else {
-            $conw = mysqli_connect("localhost", "pituEl", "hi24biscus", "homsweather");
+            $conw = mysqli_connect("localhost", "user", "password", "homsweather");
             if( isset($_POST['tmax']) ) {
                 mysqli_query($conw, 'UPDATE cnf SET valu=' . $_POST['tmax'] . ' WHERE comm="temp_max"' );
             }

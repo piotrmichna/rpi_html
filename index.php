@@ -29,7 +29,7 @@
 		<?php
 
 				//require_once "connect.php";
-				$con = mysqli_connect("localhost", "pituEl", "hi24biscus", "homster");
+				$con = mysqli_connect("localhost", "user", "password", "homster");
 
 				if (mysqli_connect_errno())
 				{
@@ -38,7 +38,7 @@
 				}
 				else
 				{
-					$conw = mysqli_connect("localhost", "pituEl", "hi24biscus", "homsweather");
+					$conw = mysqli_connect("localhost", "user", "password", "homsweather");
 					echo '<div class="dpList">';
 
 					$wym=mysqli_query($conw, 'SELECT * FROM bme ORDER BY id;');

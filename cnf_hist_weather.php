@@ -15,7 +15,7 @@
     }
     $unix_sec_do = strtotime("$dat_do"." 24:59:59");
 
-    $con = mysqli_connect("localhost", "pituEl", "hi24biscus", "homsens");
+    $con = mysqli_connect("localhost", "user", "password", "homsens");
     if (mysqli_connect_errno()){
         echo "Error: ".mysqli_connect_errno();
     } else {
@@ -296,6 +296,8 @@ chartL.render();
                 <div class="dpList">
 					<div id="chartContainerL" style="height: 370px; width: 100%;"></div>
                 </div>
+                </br>
+                </br>
 
 					<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 		</div>
